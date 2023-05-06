@@ -17,7 +17,9 @@ if __name__ == "__main__":
                           top_k=VECTOR_SEARCH_TOP_K)
     vs_path = None
     while not vs_path:
-        filepath = input("Input your local knowledge file path 请输入本地知识文件路径：")
+	# filepath = input("Input your local knowledge file path 请输入本地知识文件路径：")
+	
+        filepath = "/home/dbw6B/local.txt"
         vs_path, _ = local_doc_qa.init_knowledge_vector_store(filepath)
     history = []
     while True:
